@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Showcase | Brand Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome cho icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- ===== ANIMATED BACKGROUND ===== -->
+  <div class="bg-animation">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">✦</span> Showcase
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#brands">Thương hiệu</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-sparkles"></i> Chào mừng bạn đến với trang của mình
+      </div>
+      <h1 class="hero-title">
+        Xin chào, mình là <span class="gradient-text">Developer</span>
+        <br />đam mê công nghệ &amp; thiết kế
+      </h1>
+      <p class="hero-description">
+        Đây là nơi mình tổng hợp những thương hiệu công nghệ hàng đầu thế giới.
+        Nhấn vào bất kỳ thương hiệu nào bên dưới để khám phá trang chính thức
+        của họ.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">12+</span>
+          <span class="stat-label">Thương hiệu</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">2025</span>
+          <span class="stat-label">Cập nhật</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">Đam mê</span>
+        </div>
+      </div>
+      <a href="#brands" class="hero-btn">
+        <i class="fas fa-arrow-down"></i> Khám phá ngay
+      </a>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-card card-1">
+        <i class="fab fa-apple"></i>
+        <span>Apple</span>
+      </div>
+      <div class="floating-card card-2">
+        <i class="fab fa-google"></i>
+        <span>Google</span>
+      </div>
+      <div class="floating-card card-3">
+        <i class="fab fa-microsoft"></i>
+        <span>Microsoft</span>
+      </div>
+      <div class="floating-card card-4">
+        <i class="fab fa-spotify"></i>
+        <span>Spotify</span>
+      </div>
+      <div class="floating-card card-5">
+        <i class="fab fa-nvidia"></i>
+        <span>NVIDIA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BRANDS SECTION ===== -->
+  <section class="brands-section" id="brands">
+    <div class="section-header">
+      <span class="section-tag">🌍 Top Brands</span>
+      <h2 class="section-title">
+        Thương hiệu <span class="gradient-text">nổi tiếng</span>
+      </h2>
+      <p class="section-subtitle">
+        Nhấn vào logo để đến trang chủ chính thức của từng thương hiệu
+      </p>
+    </div>
+
+    <div class="brands-grid">
+      <!-- Apple -->
+      <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #000000;">
+          <i class="fab fa-apple"></i>
+        </div>
+        <h3 class="brand-name">Apple</h3>
+        <p class="brand-desc">Innovation & Design</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Google -->
+      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #4285F4;">
+          <i class="fab fa-google"></i>
+        </div>
+        <h3 class="brand-name">Google</h3>
+        <p class="brand-desc">Search & Technology</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Microsoft -->
+      <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #00A4EF;">
+          <i class="fab fa-microsoft"></i>
+        </div>
+        <h3 class="brand-name">Microsoft</h3>
+        <p class="brand-desc">Software & Cloud</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Amazon -->
+      <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #FF9900;">
+          <i class="fab fa-amazon"></i>
+        </div>
+        <h3 class="brand-name">Amazon</h3>
+        <p class="brand-desc">E-Commerce & AWS</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Meta -->
+      <a href="https://www.meta.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #0668E1;">
+          <i class="fab fa-meta"></i>
+        </div>
+        <h3 class="brand-name">Meta</h3>
+        <p class="brand-desc">Social & Metaverse</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Netflix -->
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #E50914;">
+          <i class="fas fa-play"></i>
+        </div>
+        <h3 class="brand-name">Netflix</h3>
+        <p class="brand-desc">Streaming & Entertainment</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Spotify -->
+      <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #1DB954;">
+          <i class="fab fa-spotify"></i>
+        </div>
+        <h3 class="brand-name">Spotify</h3>
+        <p class="brand-desc">Music & Podcasts</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- NVIDIA -->
+      <a href="https://www.nvidia.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #76B900;">
+          <i class="fab fa-nvidia"></i>
+        </div>
+        <h3 class="brand-name">NVIDIA</h3>
+        <p class="brand-desc">GPU & AI Computing</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Samsung -->
+      <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #1428A0;">
+          <i class="fab fa-samsung"></i>
+        </div>
+        <h3 class="brand-name">Samsung</h3>
+        <p class="brand-desc">Electronics & Mobile</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Tesla -->
+      <a href="https://www.tesla.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #CC0000;">
+          <i class="fas fa-car-side"></i>
+        </div>
+        <h3 class="brand-name">Tesla</h3>
+        <p class="brand-desc">EV & Clean Energy</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #6e40c9;">
+          <i class="fab fa-github"></i>
+        </div>
+        <h3 class="brand-name">GitHub</h3>
+        <p class="brand-desc">Code & Collaboration</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="brand-card">
+        <div class="brand-icon" style="--bg: #FF0000;">
+          <i class="fab fa-youtube"></i>
+        </div>
+        <h3 class="brand-name">YouTube</h3>
+        <p class="brand-desc">Video Platform</p>
+        <div class="brand-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section" id="contact">
+    <div class="contact-card">
+      <h2>
+        <span class="gradient-text">Liên hệ</span> với mình
+      </h2>
+      <p>
+        Trang này được tạo với mục đích học tập. Cảm ơn bạn đã ghé thăm! 🙏
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com" target="_blank" class="contact-btn github-btn">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="contact-btn linkedin-btn">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a href="mailto:youremail@example.com" class="contact-btn email-btn">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 <span class="gradient-text">Showcase</span>. Made with ❤️ for learning.</p>
+      <p class="footer-tech">
+        Hosted on <strong>Vercel</strong> · DNS by <strong>Cloudflare</strong> · Code on <strong>GitHub</strong>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" id="scrollTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.querySelector(".nav-links");
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Scroll to top button
+    const scrollTopBtn = document.getElementById("scrollTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add("show");
+      } else {
+        scrollTopBtn.classList.remove("show");
+      }
+    });
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          navLinks.classList.remove("active");
+        }
+      });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll(".brand-card").forEach((card, index) => {
+      card.style.animationDelay = `${index * 0.08}s`;
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>
