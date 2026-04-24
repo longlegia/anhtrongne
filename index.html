@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Showcase | Brand Hub</title>
+  <title>BetoNabe Đà Lạt | Lẩu 4 Mùa & Ẩm Thực Nhật</title>
+  <meta name="description" content="BetoNabe - Số 40 Đoàn Thị Điểm, Đà Lạt. Lẩu Mùa Thu, Đông, Xuân, Hè. Udon, Ramen, Mì Nhật. Đặt bàn: 090-7738-939" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- Chống flash giao diện khi load trang -->
+  <!-- Chống flash khi load theme -->
   <script>
     (function () {
       const saved = localStorage.getItem("theme");
@@ -32,14 +27,13 @@
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
-    <div class="blob blob-4"></div>
   </div>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="#" class="logo">
-        <span class="logo-icon">✦</span> Showcase
+        <span class="logo-icon">🍲</span> BetoNabe
       </a>
       
       <button class="theme-toggle" id="themeToggle" aria-label="Chuyển đổi giao diện">
@@ -48,13 +42,12 @@
 
       <ul class="nav-links">
         <li><a href="#about">Giới thiệu</a></li>
-        <li><a href="#brands">Thương hiệu</a></li>
+        <li><a href="#menu">Thực đơn</a></li>
+        <li><a href="#brands">Đối tác</a></li>
         <li><a href="#contact">Liên hệ</a></li>
       </ul>
       
-      <button class="nav-toggle" id="navToggle">
-        <i class="fas fa-bars"></i>
-      </button>
+      <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
 
@@ -62,152 +55,398 @@
   <section class="hero" id="about">
     <div class="hero-content">
       <div class="hero-badge">
-        <i class="fas fa-sparkles"></i> Chào mừng bạn đến với trang của mình
+        <i class="fas fa-map-marker-alt"></i> Số 40 Đoàn Thị Điểm, Đà Lạt
       </div>
       <h1 class="hero-title">
-        Xin chào, mình là <span class="gradient-text">Developer</span>
-        <br />đam mê công nghệ &amp; thiết kế
+        <span class="gradient-text">BetoNabe</span>
+        <br />Lẩu 4 Mùa • Ẩm Thực Nhật Bản
       </h1>
       <p class="hero-description">
-        Đây là nơi mình tổng hợp những thương hiệu công nghệ hàng đầu thế giới.
-        Nhấn vào bất kỳ thương hiệu nào bên dưới để khám phá trang chính thức
-        của họ.
+        Trải nghiệm lẩu Nhật truyền thống với 4 mùa: Thu - Đông - Xuân - Hè. 
+        Nguyên liệu tươi ngon, không gian ấm cúng bên bờ kè Đà Lạt.
       </p>
+      
+      <div class="hero-cta">
+        <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <i class="fas fa-utensils"></i> Xem thực đơn đầy đủ
+        </a>
+        <a href="tel:0907738939" class="btn-secondary">
+          <i class="fas fa-phone"></i> Gọi đặt bàn: 090-7738-939
+        </a>
+      </div>
+
       <div class="hero-stats">
         <div class="stat">
-          <span class="stat-number">12+</span>
-          <span class="stat-label">Thương hiệu</span>
+          <span class="stat-number">4</span>
+          <span class="stat-label">Mùa lẩu</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-number">2026</span>
-          <span class="stat-label">Cập nhật</span>
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Món ngon</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-number">∞</span>
-          <span class="stat-label">Đam mê</span>
+          <span class="stat-number">🏔️</span>
+          <span class="stat-label">View bờ kè</span>
         </div>
       </div>
-      <a href="#brands" class="hero-btn">
-        <i class="fas fa-arrow-down"></i> Khám phá ngay
-      </a>
     </div>
+    
     <div class="hero-visual">
-      <div class="floating-card card-1"><i class="fab fa-apple"></i><span>Apple</span></div>
-      <div class="floating-card card-2"><i class="fab fa-google"></i><span>Google</span></div>
-      <div class="floating-card card-3"><i class="fab fa-microsoft"></i><span>Microsoft</span></div>
-      <div class="floating-card card-4"><i class="fab fa-spotify"></i><span>Spotify</span></div>
-      <div class="floating-card card-5"><i class="fab fa-nvidia"></i><span>NVIDIA</span></div>
+      <div class="food-showcase">
+        <div class="food-card card-1">🍂 <span>Lẩu Mùa Thu</span></div>
+        <div class="food-card card-2">❄️ <span>Lẩu Mùa Đông</span></div>
+        <div class="food-card card-3">🌸 <span>Lẩu Mùa Xuân</span></div>
+        <div class="food-card card-4">☀️ <span>Lẩu Mùa Hè</span></div>
+        <div class="food-card card-5">🍜 <span>Udon & Ramen</span></div>
+      </div>
     </div>
   </section>
 
-  <!-- ===== BRANDS SECTION ===== -->
+  <!-- ===== LOCATION CARD ===== -->
+  <section class="location-section">
+    <div class="location-card">
+      <div class="location-info">
+        <h3><i class="fas fa-map-pin"></i> Vị trí quán</h3>
+        <p><strong>Số 40 Đoàn Thị Điểm</strong><br/>(Mặt sau bờ kè) • TP. Đà Lạt</p>
+        <p><i class="fas fa-phone"></i> <strong>090-7738-939</strong></p>
+      </div>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="location-btn">
+        <i class="fas fa-globe"></i> Xem bản đồ & đặt bàn
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== SEASONAL HOTPOT SECTION ===== -->
+  <section class="menu-section" id="menu">
+    <div class="section-header">
+      <span class="section-tag">🍲 Lẩu 4 Mùa Đặc Biệt</span>
+      <h2 class="section-title">
+        Hương vị <span class="gradient-text">theo mùa</span>
+      </h2>
+      <p class="section-subtitle">Nhấn vào món để xem chi tiết và đặt tại betonabe.com</p>
+    </div>
+
+    <div class="hotpot-grid">
+      <!-- Autumn Hotpot -->
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="hotpot-card autumn">
+        <div class="hotpot-header">
+          <span class="season-icon">🍂</span>
+          <h3>Lẩu Mùa Thu</h3>
+          <span class="japanese-name">Sukiyaki • Autumn Hotpot</span>
+        </div>
+        <div class="hotpot-content">
+          <p class="ingredients"><strong>Thịt bò & rau nấm</strong></p>
+          <p class="desc-en">Beef simmered with tofu, mushrooms, and vegetables in sweetened soy sauce and egg</p>
+        </div>
+        <div class="hotpot-footer">
+          <div class="price">
+            <span class="price-large">Lớn: 410k</span>
+            <span class="price-small">Nhỏ: 310k</span>
+          </div>
+          <div class="hotpot-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <!-- Winter Hotpot -->
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="hotpot-card winter">
+        <div class="hotpot-header">
+          <span class="season-icon">❄️</span>
+          <h3>Lẩu Mùa Đông</h3>
+          <span class="japanese-name">Mille feuille • Winter Hotpot</span>
+        </div>
+        <div class="hotpot-content">
+          <p class="ingredients"><strong>Thịt heo & bắp cải</strong></p>
+          <p class="desc-en">Cabbage and pork with fish stock</p>
+        </div>
+        <div class="hotpot-footer">
+          <div class="price">
+            <span class="price-large">Lớn: 380k</span>
+            <span class="price-small">Nhỏ: 280k</span>
+          </div>
+          <div class="hotpot-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <!-- Spring Hotpot -->
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="hotpot-card spring">
+        <div class="hotpot-header">
+          <span class="season-icon">🌸</span>
+          <h3>Lẩu Mùa Xuân</h3>
+          <span class="japanese-name">Chicken Stew • Spring Hotpot</span>
+        </div>
+        <div class="hotpot-content">
+          <p class="ingredients"><strong>Thịt gà, rau củ & cheese</strong></p>
+          <p class="desc-en">Chicken with milk, cheese and vegetable, potatoes</p>
+          <span class="note">⚠️ Xin vui lòng đặt trước</span>
+        </div>
+        <div class="hotpot-footer">
+          <div class="price">
+            <span class="price-large">Lớn: 470k</span>
+            <span class="price-small">Nhỏ: 370k</span>
+          </div>
+          <div class="hotpot-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <!-- Summer Hotpot -->
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="hotpot-card summer">
+        <div class="hotpot-header">
+          <span class="season-icon">☀️</span>
+          <h3>Lẩu Mùa Hè</h3>
+          <span class="japanese-name">Kimchi Nabe • Summer Hotpot</span>
+        </div>
+        <div class="hotpot-content">
+          <p class="ingredients"><strong>Thanh cua & kim chi, thịt heo</strong></p>
+          <p class="desc-en">Kimchi soup with crab sticks, pork, tofu, hot pot balls & vegetable</p>
+        </div>
+        <div class="hotpot-footer">
+          <div class="price">
+            <span class="price-large">Lớn: 400k</span>
+            <span class="price-small">Nhỏ: 300k</span>
+          </div>
+          <div class="hotpot-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== OTHER MENU SECTION ===== -->
+  <section class="menu-section secondary">
+    <div class="section-header">
+      <span class="section-tag">🍜 Món Khác</span>
+      <h2 class="section-title">
+        Đa dạng <span class="gradient-text">lựa chọn</span>
+      </h2>
+    </div>
+
+    <div class="menu-grid">
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🍜</span>
+        <div class="dish-info">
+          <h4>Udon thịt bò</h4>
+          <p class="dish-en">Beef Udon Noodle Soup</p>
+        </div>
+        <span class="dish-price">55k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🍜</span>
+        <div class="dish-info">
+          <h4>Udon thịt heo</h4>
+          <p class="dish-en">Pork Udon Noodle Soup</p>
+        </div>
+        <span class="dish-price">50k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🥚</span>
+        <div class="dish-info">
+          <h4>Udon trứng</h4>
+          <p class="dish-en">Egg Udon Noodle Soup</p>
+        </div>
+        <span class="dish-price">40k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🍳</span>
+        <div class="dish-info">
+          <h4>Udon xào bò trứng</h4>
+          <p class="dish-en">Beef Udon Stir Fry with omelette</p>
+        </div>
+        <span class="dish-price">65k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🧊</span>
+        <div class="dish-info">
+          <h4>Mì somen chạy nước</h4>
+          <p class="dish-en">Cold Somen noodles with egg, crab, ham, cucumber</p>
+        </div>
+        <span class="dish-price">90k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🍜</span>
+        <div class="dish-info">
+          <h4>Mì soba</h4>
+          <p class="dish-en">Soba noodles with beef and tofu</p>
+        </div>
+        <span class="dish-price">60k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🍝</span>
+        <div class="dish-info">
+          <h4>Spaghetti kiểu Nhật</h4>
+          <p class="dish-en">Japanese style spaghetti</p>
+        </div>
+        <span class="dish-price">70k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🥗</span>
+        <div class="dish-info">
+          <h4>Lẩu chay</h4>
+          <p class="dish-en">Vegetarian hotpot</p>
+          <span class="note-mini">⚠️ Đặt trước</span>
+        </div>
+        <span class="dish-price highlight">300k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🍲</span>
+        <div class="dish-info">
+          <h4>Lẩu Kiêu Sa (1 người)</h4>
+          <p class="dish-en">Exuberant hotpot for 1 person</p>
+        </div>
+        <span class="dish-price">170k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🥩</span>
+        <div class="dish-info">
+          <h4>Bò nướng dĩa</h4>
+          <p class="dish-en">Grilled beef with vegetables</p>
+        </div>
+        <span class="dish-price">170k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🍜</span>
+        <div class="dish-info">
+          <h4>Ramen miso</h4>
+          <p class="dish-en">Soybean paste Ramen with Egg and Pork</p>
+        </div>
+        <span class="dish-price">60k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🧊</span>
+        <div class="dish-info">
+          <h4>Mì lạnh</h4>
+          <p class="dish-en">Cold Ramen with egg, crab, ham, cucumber, tomato</p>
+        </div>
+        <span class="dish-price">69k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🍚</span>
+        <div class="dish-info">
+          <h4>Cơm bò xào</h4>
+          <p class="dish-en">Beef Rice Bowl</p>
+        </div>
+        <span class="dish-price">60k</span>
+      </a>
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="menu-item">
+        <span class="dish-icon">🍙</span>
+        <div class="dish-info">
+          <h4>Cơm nấm (Onigiri)</h4>
+          <p class="dish-en">Rice balls</p>
+        </div>
+        <span class="dish-price">20k</span>
+      </a>
+    </div>
+
+    <div class="menu-cta">
+      <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="btn-primary btn-lg">
+        <i class="fas fa-book-open"></i> Đặt món ngay tại betonabe.com
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== BRANDS SECTION (MIX IN) ===== -->
   <section class="brands-section" id="brands">
     <div class="section-header">
-      <span class="section-tag">🌍 Top Brands</span>
+      <span class="section-tag">🤝 Đối tác Công nghệ</span>
       <h2 class="section-title">
-        Thương hiệu <span class="gradient-text">nổi tiếng</span>
+        Thương hiệu <span class="gradient-text">hàng đầu</span>
       </h2>
-      <p class="section-subtitle">
-        Nhấn vào logo để đến trang chủ chính thức của từng thương hiệu
-      </p>
+      <p class="section-subtitle">BetoNabe sử dụng công nghệ từ những thương hiệu uy tín toàn cầu</p>
     </div>
 
     <div class="brands-grid">
       <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer" class="brand-card">
         <div class="brand-icon" style="--bg: #000000;"><i class="fab fa-apple"></i></div>
         <h3 class="brand-name">Apple</h3>
-        <p class="brand-desc">Innovation & Design</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
+        <p class="brand-desc">Thiết bị & Hệ sinh thái</p>
       </a>
       <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="brand-card">
         <div class="brand-icon" style="--bg: #4285F4;"><i class="fab fa-google"></i></div>
         <h3 class="brand-name">Google</h3>
-        <p class="brand-desc">Search & Technology</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
+        <p class="brand-desc">Tìm kiếm & Bản đồ</p>
       </a>
       <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer" class="brand-card">
         <div class="brand-icon" style="--bg: #00A4EF;"><i class="fab fa-microsoft"></i></div>
         <h3 class="brand-name">Microsoft</h3>
-        <p class="brand-desc">Software & Cloud</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
-      </a>
-      <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" class="brand-card">
-        <div class="brand-icon" style="--bg: #FF9900;"><i class="fab fa-amazon"></i></div>
-        <h3 class="brand-name">Amazon</h3>
-        <p class="brand-desc">E-Commerce & AWS</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
+        <p class="brand-desc">Phần mềm & Cloud</p>
       </a>
       <a href="https://www.meta.com" target="_blank" rel="noopener noreferrer" class="brand-card">
         <div class="brand-icon" style="--bg: #0668E1;"><i class="fab fa-meta"></i></div>
         <h3 class="brand-name">Meta</h3>
-        <p class="brand-desc">Social & Metaverse</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
-      </a>
-      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" class="brand-card">
-        <div class="brand-icon" style="--bg: #E50914;"><i class="fas fa-play"></i></div>
-        <h3 class="brand-name">Netflix</h3>
-        <p class="brand-desc">Streaming & Entertainment</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
+        <p class="brand-desc">Mạng xã hội</p>
       </a>
       <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer" class="brand-card">
         <div class="brand-icon" style="--bg: #1DB954;"><i class="fab fa-spotify"></i></div>
         <h3 class="brand-name">Spotify</h3>
-        <p class="brand-desc">Music & Podcasts</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
+        <p class="brand-desc">Nhạc nền quán</p>
       </a>
       <a href="https://www.nvidia.com" target="_blank" rel="noopener noreferrer" class="brand-card">
         <div class="brand-icon" style="--bg: #76B900;"><i class="fab fa-nvidia"></i></div>
         <h3 class="brand-name">NVIDIA</h3>
-        <p class="brand-desc">GPU & AI Computing</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
+        <p class="brand-desc">Hệ thống hiển thị</p>
       </a>
       <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer" class="brand-card">
         <div class="brand-icon" style="--bg: #1428A0;"><i class="fab fa-samsung"></i></div>
         <h3 class="brand-name">Samsung</h3>
-        <p class="brand-desc">Electronics & Mobile</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
-      </a>
-      <a href="https://www.tesla.com" target="_blank" rel="noopener noreferrer" class="brand-card">
-        <div class="brand-icon" style="--bg: #CC0000;"><i class="fas fa-car-side"></i></div>
-        <h3 class="brand-name">Tesla</h3>
-        <p class="brand-desc">EV & Clean Energy</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
+        <p class="brand-desc">Thiết bị điện tử</p>
       </a>
       <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" class="brand-card">
         <div class="brand-icon" style="--bg: #6e40c9;"><i class="fab fa-github"></i></div>
         <h3 class="brand-name">GitHub</h3>
-        <p class="brand-desc">Code & Collaboration</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
-      </a>
-      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="brand-card">
-        <div class="brand-icon" style="--bg: #FF0000;"><i class="fab fa-youtube"></i></div>
-        <h3 class="brand-name">YouTube</h3>
-        <p class="brand-desc">Video Platform</p>
-        <div class="brand-arrow"><i class="fas fa-arrow-right"></i></div>
+        <p class="brand-desc">Phát triển website</p>
       </a>
     </div>
   </section>
 
-  <!-- ===== CONTACT SECTION ===== -->
-  <section class="contact-section" id="contact">
-    <div class="contact-card">
-      <h2><span class="gradient-text">Liên hệ</span> với mình</h2>
-      <p>Trang này được tạo với mục đích học tập. Cảm ơn bạn đã ghé thăm! 🙏</p>
-      <div class="contact-links">
-        <a href="https://github.com" target="_blank" class="contact-btn github-btn"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://linkedin.com" target="_blank" class="contact-btn linkedin-btn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-        <a href="mailto:youremail@example.com" class="contact-btn email-btn"><i class="fas fa-envelope"></i> Email</a>
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-section">
+    <div class="cta-card">
+      <h2>
+        <span class="gradient-text">Ghé BetoNabe</span> ngay hôm nay!
+      </h2>
+      <p>
+        Không gian ấm cúng bên bờ kè Đà Lạt • Lẩu 4 mùa độc đáo • 
+        Nguyên liệu tươi ngon nhập trong ngày. Đặt bàn trước để nhận ưu đãi!
+      </p>
+      <div class="cta-buttons">
+        <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer" class="btn-primary btn-lg">
+          <i class="fas fa-globe"></i> Truy cập betonabe.com
+        </a>
+        <a href="tel:0907738939" class="btn-outline btn-lg">
+          <i class="fas fa-phone"></i> Gọi: 090-7738-939
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="footer-content">
-      <p>© 2026 <span class="gradient-text">Showcase</span>. Made with ❤️ for learning.</p>
-      <p class="footer-tech">Hosted on <strong>Vercel</strong> · DNS by <strong>Cloudflare</strong> · Code on <strong>GitHub</strong></p>
+      <div class="footer-brand">
+        <span class="logo-icon">🍲</span>
+        <strong>BetoNabe Đà Lạt</strong>
+        <p>Lẩu 4 Mùa • Ẩm Thực Nhật Bản</p>
+      </div>
+      
+      <div class="footer-info">
+        <p><i class="fas fa-map-marker-alt"></i> Số 40 Đoàn Thị Điểm (mặt sau bờ kè), TP. Đà Lạt</p>
+        <p><i class="fas fa-phone"></i> 090-7738-939</p>
+        <p><i class="fas fa-clock"></i> Mở cửa: 10:00 - 22:00 hàng ngày</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-globe"></i> Website chính thức
+        </a>
+        <a href="#"><i class="fas fa-facebook-f"></i> Facebook</a>
+        <a href="#"><i class="fas fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fas fa-zalo"></i> Zalo</a>
+      </div>
+
+      <p class="footer-copyright">
+        © 2026 <span class="gradient-text">BetoNabe</span>. Trang demo học tập · 
+        <a href="https://www.betonabe.com/" target="_blank" rel="noopener noreferrer">Truy cập trang chính thức →</a>
+      </p>
     </div>
   </footer>
 
@@ -224,7 +463,6 @@
       html.setAttribute("data-theme", theme);
       localStorage.setItem("theme", theme);
       icon.className = theme === "dark" ? "fas fa-sun" : "fas fa-moon";
-      // Thêm class để kích hoạt transition mượt sau lần đầu load
       document.body.classList.add("theme-transition");
     }
 
@@ -270,9 +508,9 @@
       { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
     );
 
-    document.querySelectorAll(".brand-card").forEach((card, i) => {
-      card.style.transitionDelay = `${i * 0.06}s`;
-      observer.observe(card);
+    document.querySelectorAll(".hotpot-card, .menu-item, .brand-card").forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.05}s`;
+      observer.observe(el);
     });
   </script>
 </body>
